@@ -1,0 +1,34 @@
+<html>
+    <body>  
+            <h1>
+                Testing 345
+            </h1>
+
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" >
+                </div>
+           
+            <div>
+                <button type="button" id="running_hills" onclick="addSentence();">Submit.</button>
+            </div>
+            </form>
+            <p id="div5">Nike just do it!</p>
+
+            <script>     
+                function addSentence() 
+                {
+                    var para = document.createElement("p");
+        
+                    var name = document.getElementById("name").value;
+                    
+                    var node = document.createTextNode(name);
+                    para.appendChild(node);
+                    var element = document.getElementById("div5");
+                    element.appendChild(para);
+                }
+            </script>
+
+    </body>
+</html>
